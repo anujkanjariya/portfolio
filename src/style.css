@@ -253,6 +253,7 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .home-header {
@@ -324,13 +325,13 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 30px !important;
+  padding-top: 25px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  /* padding-top: 100px !important; */
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -409,8 +410,16 @@ button:focus {
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding: 25px 0 !important;
+  border-top: 1px solid rgba(199, 112, 240, 0.16);
+}
+
+.footer-container {
+  max-width: 1200px !important;
+}
+
+.footer-row {
+  align-items: center;
 }
 .footer-copywright {
   text-align: center !important;
@@ -419,6 +428,14 @@ button:focus {
 .footer-body {
   z-index: 1;
   text-align: center !important;
+}
+
+.footer-links-col {
+  text-align: left !important;
+}
+
+.footer-social-col {
+  text-align: right !important;
 }
 
 @media (max-width: 767px) {
@@ -434,17 +451,188 @@ button:focus {
 .footer h3 {
   font-size: 1em;
   color: white !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+  margin: 0 !important;
 }
 .footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin: 0 !important;
   padding: 0 !important;
+}
+
+.footer .social-icons {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px 24px;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;
+}
+
+.footer-links li {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: white !important;
+  font-size: 1em;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c770f0 !important;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 18px 0 !important;
+  }
+
+  .footer-row {
+    gap: 12px;
+  }
+
+  .footer-links,
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-links-col,
+  .footer-social-col {
+    text-align: center !important;
+  }
 }
 
 .blockquote-footer {
   color: #a588c0 !important;
+}
+
+/* --------- */
+/* Contact */
+/* --------- */
+.contact-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 70px !important;
+  min-height: 90vh;
+  color: white !important;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 30px 0;
+}
+
+.contact-info {
+  text-align: left;
+  padding-right: 35px !important;
+}
+
+.contact-info p {
+  color: #d8d3e2;
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: #c770f0;
+  font-size: 1.05em;
+}
+
+.contact-email a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.contact-email a:hover {
+  color: #c770f0 !important;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 28px;
+  border: 1px solid rgba(199, 112, 240, 0.35);
+  border-radius: 8px;
+  background-color: rgba(10, 4, 22, 0.72);
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.25);
+  text-align: left;
+}
+
+.contact-form label {
+  color: white !important;
+  margin-bottom: 8px;
+}
+
+.contact-form .form-control {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(199, 112, 240, 0.35) !important;
+  border-radius: 6px !important;
+  padding: 0.75rem 0.9rem !important;
+}
+
+.contact-form .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #c770f0 !important;
+  box-shadow: 0 0 0 0.15rem rgba(199, 112, 240, 0.2) !important;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.contact-submit {
+  min-width: 170px;
+  cursor: pointer;
+}
+
+.contact-status {
+  margin: 12px 0 0;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.contact-status.success {
+  color: #8ff0a4;
+}
+
+.contact-status.error {
+  color: #ff9b9b;
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding-top: 120px !important;
+  }
+
+  .contact-info {
+    text-align: center;
+    padding-right: 15px !important;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
 }
 /* --------- */
 /* Projects */
