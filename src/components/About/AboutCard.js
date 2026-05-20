@@ -10,15 +10,16 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi everyone! I’m <span className="purple">Anuj Kanjariya</span>{" "}
             from <span className="purple">Botad, Gujarat</span>.
-            <br />
+            {/* <br /> */}
             I’m currently working as a{" "}
             <span className="purple">Software Developer</span> at{" "}
             <span className="purple">Evoort Solutions</span>.
-            <br />I hold an Integrated B.Tech in{" "}
+            {/* <br /> */}
+            I hold an Integrated B.Tech in{" "}
             <span className="purple">Computer Engineering</span> from{" "}
             <span className="purple">GTU</span>.
-            <br />
-            <br />
+            {/* <br /> */}
+            {/* <br /> */}
             Outside of coding, I love engaging in activities that keep me
             creative and inspired:
           </p>

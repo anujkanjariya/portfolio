@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Calendar from "react-activity-calendar";
 import { Row } from "react-bootstrap";
 
@@ -66,7 +66,29 @@ function getStaticContributionData() {
 }
 
 function Github() {
+  const [calendarConfig, setCalendarConfig] = useState({
+    blockSize: 30,
+    blockMargin: 10,
+    fontSize: 20,
+  });
   const contributionData = getStaticContributionData();
+
+  useEffect(() => {
+    function updateCalendarConfig() {
+      const width = window.innerWidth;
+      if (width <= 480) {
+        setCalendarConfig({ blockSize: 12, blockMargin: 4, fontSize: 10 });
+      } else if (width <= 767) {
+        setCalendarConfig({ blockSize: 16, blockMargin: 4, fontSize: 12 });
+      } else {
+        setCalendarConfig({ blockSize: 30, blockMargin: 10, fontSize: 20 });
+      }
+    }
+
+    updateCalendarConfig();
+    window.addEventListener("resize", updateCalendarConfig);
+    return () => window.removeEventListener("resize", updateCalendarConfig);
+  }, []);
 
   return (
     <Row
@@ -82,10 +104,10 @@ function Github() {
       <Calendar
         data={contributionData}
         totalCount={CONTRIBUTION_TOTAL}
-        blockSize={30}
-        blockMargin={10}
+        blockSize={calendarConfig.blockSize}
+        blockMargin={calendarConfig.blockMargin}
         color="#c084f5"
-        fontSize={20}
+        fontSize={calendarConfig.fontSize}
       />
     </Row>
   );

@@ -14,9 +14,10 @@ function About() {
       <Particle />
       <Container fluid className="about-section">
         <Container>
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Row className="about-row" style={{ justifyContent: "center" }}>
             <Col
               md={7}
+              className="about-left"
               style={{
                 justifyContent: "center",
                 paddingTop: "30px",
@@ -30,8 +31,8 @@ function About() {
             </Col>
             <Col
               md={5}
+              className="about-img about-right"
               style={{ paddingTop: "120px", paddingBottom: "50px" }}
-              className="about-img"
             >
               <img src={laptopImg} alt="about" className="img-fluid" />
             </Col>
