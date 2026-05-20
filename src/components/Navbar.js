@@ -45,7 +45,7 @@ function NavBar() {
           <p
             style={{
               color: "#c770f0",
-              fontSize: "32px",
+              fontSize: "26px",
               fontWeight: "bold",
               margin: 0,
             }}
