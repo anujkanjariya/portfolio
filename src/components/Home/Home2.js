@@ -12,34 +12,39 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
+
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
-              <br />
-              <br />
-              I’m proficient in
+              Hi, I'm <b className="purple">Anuj Kanjariya</b> — a Software Developer
+              with <b className="purple">1.5+ years of experience</b> in building
+              modern web and mobile applications. I specialize in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Full Stack Development, Shopify Development,
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              and Application Development with a focus on creating scalable,
+              high-performance, and user-friendly digital products.
               <br />
               <br />
-              My key areas of interest include developing
+              I work with technologies like
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  React.js, Next.js, Node.js, React Native, JavaScript, MongoDB,
+                  SQL, and Shopify
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              to develop full-stack applications, custom Shopify solutions,
+              and cross-platform mobile apps.
               <br />
               <br />
-              Whenever possible, I love building projects with
+              I enjoy solving real-world problems through clean code,
+              modern UI/UX, and efficient system architecture while building
+              production-ready applications with strong performance and scalability.
+              <br />
+              <br />
+              Whenever possible, I love building applications using
               <b className="purple"> Node.js </b> and modern frameworks like{" "}
               <i>
                 <b className="purple">React.js</b> and{" "}

@@ -17,6 +17,7 @@ import Redis from "../../Assets/TechIcons/Redis.svg";
 import Docker from "../../Assets/TechIcons/Docker.svg";
 import Mongo from "../../Assets/TechIcons/Mongo.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
+import SqlLogo from "../../Assets/TechIcons/sql.png";
 import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
 import Redux from "../../Assets/TechIcons/Redux.svg";
 import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
@@ -29,8 +30,8 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" />
-        <div className="tech-icons-text">C++</div>
+        <img src={ReactIcon} alt="react" />
+        <div className="tech-icons-text">React.Js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Javascript} alt="javascript" />
@@ -38,27 +39,23 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Go} alt="go" />
-        <div className="tech-icons-text">Go</div>
+        <div className="tech-icons-text">Typescript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Node} alt="node" />
         <div className="tech-icons-text">Node.Js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity fontSize={"24px"} />
-        <div className="tech-icons-text">Solidity</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <img src={Mongo} alt="mongoDb" />
-        <div className="tech-icons-text">Mongo DB</div>
+        <div className="tech-icons-text">MongoDB</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={SqlLogo} alt="sql" className="tech-icon-images" />
+        <div className="tech-icons-text">SQL</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={SQL} alt="SQL" />
+        <div className="tech-icons-text">Postgresql</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Redux} alt="redux" />
@@ -74,10 +71,6 @@ function Techstack() {
         <div className="tech-icons-text">Git</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="firebase" />
-        <div className="tech-icons-text">Firebase</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <img src={Redis} alt="redis" />
         <div className="tech-icons-text">Redis</div>
       </Col>
@@ -85,28 +78,7 @@ function Techstack() {
         <img src={Docker} alt="docker" />
         <div className="tech-icons-text">Docker</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kubernates} alt="kubernetes" />
-        <div className="tech-icons-text">Kubernetes</div>
-      </Col>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
-        <div className="tech-icons-text">Postgresql</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Java} alt="haskell" />
-        <div className="tech-icons-text">Java</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={HaskellIcon} alt="haskell" />
-        <div className="tech-icons-text">Haskell</div>
-      </Col>
 
       <Col xs={4} md={2} className="tech-icons">
         <img src={Tailwind} alt="tailwind" />
@@ -133,10 +105,6 @@ function Techstack() {
         <div className="tech-icons-text">AWS</div>
       </Col>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kafka} alt="Kafka" className="tech-icon-images" />
-        <div className="tech-icons-text">Kafka</div>
-      </Col>
     </Row>
   );
 }
